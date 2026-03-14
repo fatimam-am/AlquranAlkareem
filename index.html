@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Holy Qur'an</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background:#547067;
+    background-image:url("https://www.transparenttextures.com/patterns/arabesque.png");
+    margin:0;
+    text-align:center;
+    color:#EBE2D3;
+}
+/* HEADER */
+header{
+    padding:60px 20px;
+}
+.title{
+    font-family:'Playfair Display', serif;
+    font-size:46px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:12px;
+    color:#FFFFFF;
+    text-shadow:0 2px 10px rgba(0,0,0,0.35);
+}
+.arabic{
+    font-family:'Amiri', serif;
+    font-size:56px;
+    font-weight:700;
+    direction:rtl;
+    margin-bottom:12px;
+    color:#FAF7F2;
+    text-shadow:0 3px 12px rgba(0,0,0,0.45);
+}
+p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+.subtitle{
+    font-family:'Playfair Display', serif;
+    font-size:20px;
+    color:#f6fdf4;
+    margin-bottom:20px;
+}
+.subtitleArabic{
+    font-family:'Amiri', serif;
+    font-size:22px;
+    direction:rtl;
+    color:#f6fdf4;
+    margin-bottom:30px;
+}
+.audioTitle{
+    font-family:'Playfair Display', serif;
+    font-size:28px;
+    color:#f6fdf4;
+    margin-bottom:25px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+}
+.arabicSubtitle{
+    font-family:'Amiri', serif;
+    font-size:22px;
+    direction:rtl;
+    display:block;
+    margin-top:5px;
+    color:#f6fdf4;
+}
+/* BUTTONS */
+button{
+    padding:15px 30px;
+    margin:10px;
+    font-size:18px;
+    border:none;
+    border-radius:12px;
+    background:#0E4732;
+    color:#EBE2D3;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background:#84BDA9;
+    color:#0E4732;
+}
+.arabicButton{
+    font-family:'Amiri', serif;
+    font-size:18px;
+    display:block;
+    margin-top:4px;
+    direction:rtl;
+}
+/* AUDIO SECTION */
+#audioSection{
+    display:none;
+    padding:40px 20px;
+}
+#audioSection h2{
+    margin-bottom:30px;
+    font-family:'Playfair Display', serif;
+}
+/* SURAH CARDS */
+.surah{
+    background:#0E4732;
+    margin:15px auto;
+    padding:20px;
+    width:320px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+.surah h3{
+    margin-bottom:10px;
+    font-family:'Amiri', serif;
+}
+audio{
+    width:100%;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="arabic"> بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ </div>
+    <div class="title"> القرآن الكريم </div>
+    <div class="divider"></div>
+    <p class="subtitle">Read and Listen to the Noble Qur'an</p>
+    <p class="subtitleArabic">اقرأ واستمع إلى القرآن الكريم</p>
+
+<!-- Read Button -->
+<button onclick="window.location.href='https://theholyquran.atoms.world'">
+📖 Read Qur'an
+<span class="arabicButton">اقرأ القرآن</span>
+</button>
+
+ </button>
+
+    <button onclick="scrollToAudio()">
+        🎧 Listen to Qur'an <span class="arabicButton">استمع إلى القرآن</span>
+    </button>
+</header>
+
+<script>
+function scrollToRead() {
+    // Scroll to the top where the main content is
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function scrollToAudio() {
+    var audioSection = document.getElementById("audioSection");
+    audioSection.style.display = "block"; // make sure it's visible
+    window.scrollTo({ top: audioSection.offsetTop, behavior: 'smooth' });
+}
+</script>
+</div>
+
+<div id="audioSection">
+
+<h2 class="arabicSubtitle">
+
+Qur'an Audio – Mishary Alafasy
+<br>
+<span class="audioTitle">تلاوة القرآن – مشاري العفاسي</span>
+</h2>
+
+<div class="surah">
+<h3>Surah Al-Fatiha سورة الفاتحة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/001.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Baqara سورة البقرة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/002.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Āl-ʿImrān سورة آل عمران</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/003.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Nisā سورة النساء</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/004.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Māʾidah سورة المائدة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/005.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Anʿām سورة الأنعام</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/006.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Aʿrāf سورة الأعراف</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/007.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Anfāl سورة الأنفال</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/008.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah At-Tawbah سورة التوبة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/009.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Yūnus سورة يونس</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/010.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Hūd سورة هود</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/011.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Yūsuf سورة يوسف</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/012.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ar-Raʿd سورة الرعد</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/013.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ibrāhīm سورة ابراهيم</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/014.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Ḥijr سورة الحجر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/015.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Naḥl سورة النحل</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/016.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Isrāʾ سورة الاسراء</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/017.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Kahf سورة الكهف</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/018.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Maryam سورة مريم</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/019.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ṭā-Hā سورة طه</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/020.mp3">
+</audio>
+</div>
+
+
+<div class="surah">
+<h3>Surah Al-Anbiyāʾ سورة الأنبياء</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/021.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Ḥajj سورة الحج</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/022.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Al-Muʾminūn سورة المؤمنون</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/023.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Nūr سورة النور</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/024.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Furqān سورة الفرقان</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/025.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ash-Shuʿarāʾ سورة الشعراء</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/026.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Naml سورة النمل</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/027.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Qaṣaṣ سورة القصص</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/028.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-ʿAnkabūt سورة العنكبوت</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/029.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ar-Rūm سورة الروم</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/030.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Luqmān سورة لقمان</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/031.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah As-Sajdah سورة السجدة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/032.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Aḥzāb سورة الأحزاب</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/033.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Sabaʾ سورة سبأ</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/034.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Fāṭir سورة فاطر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/035.mp3">
+</audio>
+</div>
+
+
+<div class="surah">
+<h3>Surah Ya-Sin سورة يس</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/036.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah As-Sāffāt سورة الصافات</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/037.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ṣād سورة ص</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/038.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Az-Zumar سورة الزمر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/039.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ghāfir سورة غافر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/040.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Fuṣṣilat سورة فصلت</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/041.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ash-Shūrā سورة الشورى</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/042.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Az-Zukhruf سورة الزخرف</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/043.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ad-Dukhān سورة الدخان</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/044.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Jāthiyah سورة الجاثية</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/045.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Aḥqāf سورة الاحقاف</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/046.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Muḥammad  سورة محمد</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/047.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Fatḥ سورة الفتح</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/048.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ḥujurāt سورة الحجرات</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/049.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Qāf سورة ق</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/050.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Adh-Dhāriyāt سورة الذاريات</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/051.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah At-Ṭūr سورة الطور</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/052.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Najm سورة النجم</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/053.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Qamar سورة القمر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/054.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ar-Rahma سورة الرحمن</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/055.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Wāqiʿah سورة الواقعة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/056.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Ḥadīd سورة الحديد</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/057.mp3">
+</audio>
+</div>
+
+
+<div class="surah">
+<h3>Surah Al-Mujādalah سورة المجادلة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/058.mp3">
+</audio>
+</div>
+
+
+<div class="surah">
+<h3>Surah Al-Hashr سورة الحشر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/059.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Mumtaḥanah سورة الممتحنة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/060.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah As-Ṣaff سورة الصف</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/061.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Jumʿah سورة الجمعة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/062.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Munāfiqūn سورة المنافقون</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/063.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah At-Taghābun سورة التغابن</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/064.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Aṭ-Ṭalāq سورة الطلاق</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/065.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah At-Taḥrīm سورة التحريم</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/066.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Mulk سورة الملك</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/067.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Qalam سورة القلم</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/068.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Ḥāqqah سورة حاقة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/069.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Maʿārij سورة المعراج</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/070.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Nūḥ سورة نوح</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/071.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Jinn سورة الجن</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/072.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Muzzammil سورة المزمل</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/073.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Muddaththir سورة المدثر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/074.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Qiyāmah سورة القيامة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/075.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Insān سورة الإنسان</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/076.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Mursalāt سورة المرسلات</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/077.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Nabāʾ سورة النبأ</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/078.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Nāziʿāt سورة النازعات</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/079.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah ʿAbasa سورة عبس</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/080.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah At-Takwīr سورة التكوير</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/081.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Infiṭār سورة الإنفطار</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/082.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Muṭaffifīn سورة المطففين</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/083.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Inshiqāq سورة الإنشقاق</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/084.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Burūj سورة البروج</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/085.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Aṭ-Ṭāriq سورة الطارق</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/086.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Aʿlā سورة الأعلى</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/087.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Ghāshiyah سورة الغاشية</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/088.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Fajr سورة الفجر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/089.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Balad سورة البلد</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/090.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ash-Shams سورة الشمس</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/091.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Layl سورة الليل</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/092.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Aḍ-Ḍuḥā سورة الضحى</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/093.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Ash-Sharḥ سورة الشرح</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/094.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah At-Tīn سورة التين</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/095.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-ʿAlaq سورة العلق</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/096.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Qadr سورة القدر</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/097.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Bayyinah سورة البينة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/098.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Az-Zalzalah سورة الزلزلة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/099.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-ʿĀdiyāt سورة العاديات</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/100.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Qāriʿah سورة القارعة</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/111.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Ikhlas سورة الاخلاص</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/112.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah Al-Falaq سورة الفلق</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/113.mp3">
+</audio>
+</div>
+
+<div class="surah">
+<h3>Surah An-Nas سورة الناس</h3>
+<audio controls>
+<source src="https://download.quranicaudio.com/quran/mishaari_raashid_al_3afaasee/114.mp3">
+</audio>
+</div>
+
+</div>
+
+<button id="backToTop" onclick="scrollToTop()" 
+        style="position:fixed;bottom:20px;right:20px;padding:12px 20px;font-size:16px;border:none;border-radius:8px;background:#0E4732;color:#EBE2D3;cursor:pointer;display:none;z-index:1000;">
+    ⬆ 
+</button>
+
+<body>
+<script>
+ // Show button when scrolling down
+  window.onscroll = function() {
+    document.getElementById("backToTop").style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // Get all audio elements in the audio section
+  const audios = document.querySelectorAll("#audioSection audio");
+
+  // Loop through each audio
+  audios.forEach((audio, index) => {
+    // Pause all other audios when one starts
+    audio.addEventListener("play", () => {
+      audios.forEach((a, i) => {
+        if (i !== index) a.pause();
+      });
+    });
+
+    // When an audio ends, play the next one automatically
+    audio.addEventListener("ended", () => {
+      let nextIndex = index + 1;
+      if (nextIndex < audios.length) {
+        audios[nextIndex].play();
+      }
+    });
+  });
+</script>
+</body>
+</html>
